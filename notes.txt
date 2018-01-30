@@ -1,0 +1,29 @@
+Examples:
+
+	MyFodyAddin:
+	- Replacing method body
+	- Adding new "hidden" method
+	- Commented out, live coding (question from audience) about exceptions.
+
+	Beeper:
+	- Play 1 second annoying sound for each method call
+
+	Rainbow:
+	- Change background color for each method containing Console.WriteLine
+
+Make own plugin:
+
+	Test in unit tests:
+		Run tests from solution.
+
+	Test as nuget:
+		run ".\<addinname>.Fody\Nuget\build.bat"
+		edit ".\<addinname>.Fody\Nuget\pack.bat" to local folder (or use "C:\Nuget\Feed\")
+
+		Setup a source like: nuget_source.png, but with your own local folder
+		Remember to use "include prerelease" with this format
+
+	Magic of Fody:
+		(.net classic shows path to target files in csproj, core don't)
+		Targets found in "C:\Users\<username>\.nuget\packages\fody\2.3.18\build\Fody.targets"
+		Fody addins (downloaded from nuget) found in "C:\Users\<username>\.nuget\packages\<addinname>"

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Rainbow.Fody</id>
+    <version>1.0.0</version>
+    <authors>Me</authors>
+    <owners>Me</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>http://github.com/Fody/MyFodyAddin</projectUrl>
+    <iconUrl>https://raw.github.com/Fody/BasicFodyAddin/master/package_icon.png</iconUrl>
+    <description>Package Description</description>
+    <tags>ILWeaving, Fody, Cecil, AOP</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Fody" version="2.3.14" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Fody" version="2.3.14" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
